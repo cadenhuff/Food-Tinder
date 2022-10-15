@@ -1,0 +1,63 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        Image:
+            source: 'photo.jpeg'
+            size: (500,500)
+            allow_stretch: False
+            keep_ratio: True
+
+        GridLayout:
+            rows:2
+            
+            TextInput:
+                text: 'Restaurant Information'
+                foreground_color: (1,1,1,1)
+                background_color: (0,0,0,0)
+            GridLayout:
+                cols:2
+
+                NoButton:
+                    text: 'No'
+                    keep_ratio: True
+                    pos_hint: {'center': 0.5}
+                    size_hint: (1, 0.3)
+                    padding: (1,2)
+                    spacing: 20
+
+                YesButton:
+                    text: 'Yes'
+                    keep_ratio: True
+                    pos_hint: {'center': 0.5}
+                    size_hint: (1, 0.3)
+                    padding: (1,2)
+                    spacing: 20
+
+<NoButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    border: (235, 1, 2, 87)
+    canvas.before:
+        Color:
+            rgba: (210/255, 4/255, 45/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [158]
+
+
+            
+<YesButton@Button>
+    background_color: (0,0,0,0)
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: (51/255, 135/255, 67/255, 1)
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [158]
+
+
