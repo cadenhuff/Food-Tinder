@@ -1,5 +1,19 @@
 import pandas as pd
 import numpy as np
+<<<<<<< HEAD
+import kivy
+from kivy.app import App
+from kivy.uix.label import Label
+
+class MyApp(App):
+
+    def build(self):
+        return Label(text = "Hello my name is Eric")
+
+if __name__ == "__main__":
+    MyApp().run()
+
+=======
 from User import User
 
 location = input("Enter a Location!") #IDK how this will work in the code, might need to do address
@@ -31,3 +45,4 @@ def main():
 
 
 main()
+>>>>>>> f08d72177260e2fc4ebc892c80d656f62a178702
