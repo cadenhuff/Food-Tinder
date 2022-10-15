@@ -11,12 +11,18 @@ max_price = input("")
 time = input("What time are you thinking of going?")
 
 
+right_restuarants = []
+left_restuarants = []
 
 
 
 def main():
     cur_user = User(location,preference, distance, allergies, min_price, max_price
-    print(x.location)
+
+    
+    cur_user 
+    
+
 
 
 
