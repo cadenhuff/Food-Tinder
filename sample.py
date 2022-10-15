@@ -15,7 +15,7 @@ time = input("What time are you thinking of going?")
 
 
 def main():
-    x = User(location,1,2,3,4,5,6)
+    cur_user = User(location,preference, distance, allergies, min_price, max_price
     print(x.location)
 
 
