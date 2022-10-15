@@ -11,7 +11,7 @@ class User:
 
     
     def get_restaurant(self):
-        x = getdata.get_restaurants(self.location,self.distance,self.price)
+        x = getdata.get_data_func(self.location,self.distance,self.price)
         return x
 
 
