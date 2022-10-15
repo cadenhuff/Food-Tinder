@@ -1,18 +1,18 @@
+import getdata
 class User:
     ranked_resturants = []
-    def __init__(self,location,preference,distance,allergies,min_price,max_price,time):
+    def __init__(self,location,preference,distance,allergies,price,time):
         self.location = location
         self.preference = preference
-        self.distance = disance
+        self.distance = distance
         self.allergies = allergies
-        self.min_price = min_price
-        self.max_price = max_price
+        self.price = price
         self.time = time
 
     
     def get_restaurant(self):
-        #Run yelp api to get resturants with params
-        
+        x = getdata.get_restaurants(self.location,self.distance,self.price)
+        return x
 
 
 
